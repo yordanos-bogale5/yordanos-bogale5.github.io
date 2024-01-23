@@ -60,10 +60,10 @@ class Recommendations extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _buildImageLink( 'github','assets/photo_github.jpg', 'https://github.com/yordanos-bogale5'),
-              _buildImageLink('LinkedIn', 'assets/portpolio_photo.jpg', 'https://www.linkedin.com/in/yordanos-bogale'),
-              _buildImageLink('Twitter', 'assets/portpolio_photo.jpg', 'https://twitter.com/your-twitter-account'),
-              _buildImageLink('Telegram', 'assets/portpolio_photo.jpg', 'https://t.me/Jordan_Bogale05'),
+              _buildImageLink('assets/photo_github.jpg', 'https://github.com/yordanos-bogale5'),
+              _buildImageLink('assets/photo_linkedn.jpg', 'https://www.linkedin.com/in/yordanos-bogale'),
+              _buildImageLink('assets/twiter.jpg', 'https://twitter.com/your-twitter-account'),
+              _buildImageLink('assets/photo_2024-01-22_20-36-39.jpg', 'https://t.me/Jordan_Bogale05'),
             ],
           ),
           SizedBox(height: 32.0),
@@ -90,7 +90,7 @@ class Recommendations extends StatelessWidget {
     );
   }
 
-  Widget _buildImageLink(String title, String imagePath, String url) {
+  Widget _buildImageLink(String imagePath, String url) {
     return InkWell(
       onTap: () async {
         if (await canLaunch(url)) {
@@ -99,19 +99,18 @@ class Recommendations extends StatelessWidget {
       },
       child: Column(
         children: [
-          Image.asset(
-            imagePath,
+          Container(
             height: 50,
             width: 50,
-          ),
-          SizedBox(height: 8.0),
-          Text(
-            title,
-            style: TextStyle(
-              color: Colors.blue,
-              decoration: TextDecoration.underline,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              image: DecorationImage(
+                image: AssetImage(imagePath),
+                fit: BoxFit.cover,
+              ),
             ),
           ),
+          SizedBox(height: 8.0),
         ],
       ),
     );

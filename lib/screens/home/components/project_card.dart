@@ -16,14 +16,56 @@ class ProjectsScreen extends StatelessWidget {
               title: 'Good Grade Student',
               description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
               imageAsset: 'assets/ggs.jpg',
+              cardWidth: 400,
+              cardHeight: 600,
             ),
             SizedBox(height: 16.0),
-            buildProjectCard(
+             buildProjectCard(
               context,
-              title: 'Project 2',
-              description: 'Description for Project 2.',
-              imageAsset: 'assets/project2_image.jpg',
+              title: 'Good Grade Student',
+              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
+              imageAsset: 'assets/ggs.jpg',
+              cardWidth: 400,
+              cardHeight: 600,
             ),
+            SizedBox(height: 16.0),
+             buildProjectCard(
+              context,
+              title: 'Good Grade Student',
+              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
+              imageAsset: 'assets/ggs.jpg',
+              cardWidth: 400,
+              cardHeight: 600,
+            ),
+            SizedBox(height: 16.0),
+             buildProjectCard(
+              context,
+              title: 'Good Grade Student',
+              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
+              imageAsset: 'assets/ggs.jpg',
+              cardWidth: 400,
+              cardHeight: 600,
+            ),
+            SizedBox(height: 16.0),
+             buildProjectCard(
+              context,
+              title: 'Good Grade Student',
+              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
+              imageAsset: 'assets/ggs.jpg',
+              cardWidth: 400,
+              cardHeight: 600,
+            ),
+            SizedBox(height: 16.0),
+             buildProjectCard(
+              context,
+              title: 'Good Grade Student',
+              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
+              imageAsset: 'assets/ggs.jpg',
+              cardWidth: 400,
+              cardHeight: 600,
+            ),
+            SizedBox(height: 16.0),
+           
             // Add more buildProjectCard calls for each project
           ],
         ),
@@ -32,7 +74,8 @@ class ProjectsScreen extends StatelessWidget {
   }
 
   Widget buildProjectCard(BuildContext context,
-      {required String title, required String description, required String imageAsset}) {
+      {required String title, required String description, required String imageAsset, double cardWidth = 400, double cardHeight = 600}) {
+    
     return GestureDetector(
       onTap: () {
         Navigator.push(
@@ -46,26 +89,29 @@ class ProjectsScreen extends StatelessWidget {
           ),
         );
       },
-      child: Hero(
-        tag: title, // Unique tag for Hero animation
-        child: Card(
-          elevation: 5,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ClipRRect(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(8.0),
-                  topRight: Radius.circular(8.0),
-                ),
-                child: Image.asset(
-                  imageAsset,
-                  fit: BoxFit.cover,
-                  width: double.infinity,
-                  height: 150, // Adjust the height as needed
-                ),
+      child: Card(
+        elevation: 5,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20.0),
+          side: BorderSide(color: Colors.amber[800]!, width: 1.0),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20.0),
+                bottomLeft: Radius.circular(20.0),
               ),
-              Padding(
+              child: Image.asset(
+                imageAsset,
+                fit: BoxFit.fill,
+                width: cardWidth,
+                height: cardHeight,
+              ),
+            ),
+            Expanded(
+              child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -73,20 +119,20 @@ class ProjectsScreen extends StatelessWidget {
                     Text(
                       title,
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     SizedBox(height: 8.0),
                     Text(
                       description,
-                      style: TextStyle(fontSize: 16),
+                      style: TextStyle(fontSize: 18),
                     ),
                   ],
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
@@ -115,14 +161,11 @@ class ProjectDetailsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Hero(
-              tag: title, // Same tag as in the previous screen for Hero animation
-              child: Image.asset(
-                imageAsset,
-                fit: BoxFit.cover,
-                width: double.infinity,
-                height: 200, // Adjust the height as needed
-              ),
+            Image.asset(
+              imageAsset,
+              fit: BoxFit.fill,
+              width: 300,
+              height: 400,
             ),
             SizedBox(height: 16.0),
             Text(

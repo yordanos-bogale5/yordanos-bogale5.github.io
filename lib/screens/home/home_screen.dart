@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_profile/screens/home/components/about.dart';
+import 'package:flutter_profile/screens/home/components/cv.dart';
 import 'package:flutter_profile/screens/home/components/project_card.dart';
 import 'components/contact_me.dart';
 import 'components/home_banner.dart';
@@ -67,13 +69,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     ListTile(
                       leading: Icon(Icons.person, color: Colors.white),
                       title: Text(
+                       
                         'About',
                         style: TextStyle(
                           color: Colors.white,
                         ),
                       ),
                       onTap: () {
-                        // Handle item 2 press
+                        // Handle item 3 press
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>  AboutScreen()),
+                        );
                         setState(() {
                           isDrawerOpen = false;
                         });
@@ -101,13 +108,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     ListTile(
                       leading: Icon(Icons.description, color: Colors.white),
                       title: Text(
+                        
                         'Resume',
                         style: TextStyle(
                           color: Colors.white,
                         ),
                       ),
                       onTap: () {
-                        // Handle item 2 press
+                        // Handle item 3 press
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ResumeScreen ()),
+                        );
                         setState(() {
                           isDrawerOpen = false;
                         });
