@@ -23,9 +23,9 @@ class ProjectsScreen extends StatelessWidget {
             SizedBox(height: 16.0),
              buildProjectCard(
               context,
-              title: 'Exit Exam App',
-              description: ' Meet our Exit Exam App, designed for graduate students. It features a strategic Blueprint Section, in-depth Tutorials Hub, and an Exam Section with detailed answer explanations. Our user-friendly interface streamlines preparation, offering a comprehensive and efficient study experience.',
-              imageAsset: 'assets/sata_image/home screen.jpg',
+              title: 'Expense Tracker App',
+              description: ' Effortlessly manage your finances with our Expense Tracker app. Stay on top of your spending, set budgets, and gain insights into your financial habits.',
+              imageAsset: 'assets/expense tracker/screen.png',
               cardWidth: 400,
               cardHeight: 600,
             ),
