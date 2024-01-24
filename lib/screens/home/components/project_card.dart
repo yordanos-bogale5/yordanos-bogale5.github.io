@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/screens/home/components/detail_card.dart';
 
 class ProjectsScreen extends StatelessWidget {
   @override
@@ -22,9 +23,9 @@ class ProjectsScreen extends StatelessWidget {
             SizedBox(height: 16.0),
              buildProjectCard(
               context,
-              title: 'Good Grade Student',
-              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
-              imageAsset: 'assets/ggs.jpg',
+              title: 'Exit Exam App',
+              description: ' Meet our Exit Exam App, designed for graduate students. It features a strategic Blueprint Section, in-depth Tutorials Hub, and an Exam Section with detailed answer explanations. Our user-friendly interface streamlines preparation, offering a comprehensive and efficient study experience.',
+              imageAsset: 'assets/sata_image/home screen.jpg',
               cardWidth: 400,
               cardHeight: 600,
             ),
@@ -77,18 +78,14 @@ class ProjectsScreen extends StatelessWidget {
       {required String title, required String description, required String imageAsset, double cardWidth = 400, double cardHeight = 600}) {
     
     return GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => ProjectDetailsScreen(
-              title: title,
-              description: description,
-              imageAsset: imageAsset,
-            ),
-          ),
-        );
-      },
+     onTap: () {
+                        // Handle item 3 press
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>  CoursePage()),
+                        );
+                       
+                      },
       child: Card(
         elevation: 5,
         shape: RoundedRectangleBorder(

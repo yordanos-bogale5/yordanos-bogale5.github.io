@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/screens/home/components/about.dart';
-import 'package:flutter_profile/screens/home/components/cv.dart';
-import 'package:flutter_profile/screens/home/components/project_card.dart';
+
+import 'package:my_portfolio/screens/home/components/about.dart';
+import 'package:my_portfolio/screens/home/components/cv.dart';
+import 'package:my_portfolio/screens/home/components/project_card.dart';
 import 'components/contact_me.dart';
 import 'components/home_banner.dart';
 import 'components/meet_developer.dart';

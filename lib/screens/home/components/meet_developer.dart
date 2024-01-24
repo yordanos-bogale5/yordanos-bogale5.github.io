@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/responsive.dart';
+
+import 'package:my_portfolio/responsive.dart';
 
 class MyProjects extends StatelessWidget {
   const MyProjects({

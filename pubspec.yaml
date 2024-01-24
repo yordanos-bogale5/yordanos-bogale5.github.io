@@ -1,4 +1,4 @@
-name: flutter_profile
+name: my_portfolio
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -56,7 +56,27 @@ flutter:
     - assets/photo_linkedn.jpg
     - assets/twiter.jpg
     - assets/ggs.jpg
+    - assets/images/dart.jpg
+    - assets/images/flutter.jpg
+    - assets/images/java.jpg
+    - assets/images/python.jpg
+    - assets/images/go.jpg
+    - assets/images/nodejs.jpg
+    - assets/images/mongodb.jpg
+    - assets/images/javascript.jpg
+    - assets/images/vue.jpg
+    - assets/images/django.jpg
+    - assets/images/firebase.jpg
+    - assets/images/swift.jpg
 
+    - assets/ggs_images/admin.jpg
+    - assets/ggs_images/auth.jpg
+    - assets/ggs_images/course detail.jpg
+    - assets/ggs_images/drawer.jpg
+    - assets/ggs_images/home.jpg
+    - assets/ggs_images/instructor mgt.jpg
+
+    - assets/sata_image/home screen.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
