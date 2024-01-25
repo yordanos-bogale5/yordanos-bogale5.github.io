@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../../constants.dart';
+
 
 class Recommendations extends StatelessWidget {
   const Recommendations({Key? key}) : super(key: key);
