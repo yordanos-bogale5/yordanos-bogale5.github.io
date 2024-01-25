@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:my_portfolio/screens/home/components/about.dart';
 import 'package:my_portfolio/screens/home/components/cv.dart';
 import 'package:my_portfolio/screens/home/components/project_card.dart';
@@ -22,22 +21,24 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          SingleChildScrollView(
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 60.0),
-                  child: HomeBanner(),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 50.0),
-                  child: MyProjects(),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 50.0),
-                  child: Recommendations(),
-                ),
-              ],
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 60.0),
+                    child: HomeBanner(),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 50.0),
+                    child: MyProjects(),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 50.0),
+                    child: Recommendations(),
+                  ),
+                ],
+              ),
             ),
           ),
           if (isDrawerOpen)
@@ -47,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
               bottom: 0,
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.7,
+                height: MediaQuery.of(context).size.height, // Adjust as needed
                 color: Colors.black.withOpacity(0.5),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -61,7 +63,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       onTap: () {
-                        // Handle item 1 press
                         setState(() {
                           isDrawerOpen = false;
                         });
@@ -70,24 +71,22 @@ class _HomeScreenState extends State<HomeScreen> {
                     ListTile(
                       leading: Icon(Icons.person, color: Colors.white),
                       title: Text(
-                       
                         'About',
                         style: TextStyle(
                           color: Colors.white,
                         ),
                       ),
                       onTap: () {
-                        // Handle item 3 press
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) =>  AboutScreen()),
+                          MaterialPageRoute(builder: (context) => AboutScreen()),
                         );
                         setState(() {
                           isDrawerOpen = false;
                         });
                       },
                     ),
-                     ListTile(
+                    ListTile(
                       leading: Icon(Icons.work, color: Colors.white),
                       title: Text(
                         'Projects',
@@ -96,7 +95,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       onTap: () {
-                        // Handle item 3 press
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => ProjectsScreen()),
@@ -109,17 +107,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     ListTile(
                       leading: Icon(Icons.description, color: Colors.white),
                       title: Text(
-                        
                         'Resume',
                         style: TextStyle(
                           color: Colors.white,
                         ),
                       ),
                       onTap: () {
-                        // Handle item 3 press
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => ResumeScreen ()),
+                          MaterialPageRoute(builder: (context) => ResumeScreen()),
                         );
                         setState(() {
                           isDrawerOpen = false;
@@ -133,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(120.0), // Adjust the height as needed
+        preferredSize: Size.fromHeight(120.0),
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
