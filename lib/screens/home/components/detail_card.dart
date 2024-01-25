@@ -9,8 +9,10 @@ class CoursePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Detail Project Screen'),
       ),
-      body: ListView(
-        padding: EdgeInsets.all(116.0),
+      body:  Padding(
+        padding: const EdgeInsets.only(left:200,right:200),
+      child: ListView(
+        
         children: [
           _buildSection(
             title: 'Home Screen',
@@ -35,6 +37,7 @@ class CoursePage extends StatelessWidget {
           // Add more sections/screens as needed
         ],
       ),
+      ),
     );
   }
 
@@ -52,7 +55,7 @@ class CoursePage extends StatelessWidget {
         side: BorderSide(color: Colors.amber[800]!),
       ),
       child: Container(
-        height: 200.0,
+        height: 500.0,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -94,7 +97,10 @@ class CoursePage extends StatelessWidget {
                         // Navigate to the specific screen when the button is pressed
                         // Replace with your navigation logic
                       },
-                      child: Text('View Details'),
+                      child: Text(
+                         "Preview",
+                        style: TextStyle(color: Colors.amber[800]),
+                      ),
                     ),
                   ],
                 ),

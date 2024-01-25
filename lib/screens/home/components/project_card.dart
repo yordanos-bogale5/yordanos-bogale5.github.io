@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/screens/home/components/detail_card.dart';
 
 class ProjectsScreen extends StatelessWidget {
   @override
@@ -9,65 +8,243 @@ class ProjectsScreen extends StatelessWidget {
         title: Text('My Projects'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.only(left: 200, right: 200),
         child: ListView(
           children: [
             buildProjectCard(
               context,
-              title: 'Good Grade Student',
-              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
+              title: RichText(
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Good  ",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "Grade\n",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "Student",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              description:
+                  'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
               imageAsset: 'assets/ggs.jpg',
               cardWidth: 400,
-              cardHeight: 600,
+              cardHeight: 450,
             ),
             SizedBox(height: 16.0),
-             buildProjectCard(
+            buildProjectCard(
               context,
-              title: 'Expense Tracker App',
-              description: ' Effortlessly manage your finances with our Expense Tracker app. Stay on top of your spending, set budgets, and gain insights into your financial habits.',
+              title: RichText(
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Expense ",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "Tracker\n",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "App",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              description:
+                  'Effortlessly manage your finances with our Expense Tracker app. Stay on top of your spending, set budgets, and gain insights into your financial habits.',
               imageAsset: 'assets/expense tracker/screen.png',
               cardWidth: 400,
-              cardHeight: 600,
+              cardHeight: 450,
             ),
             SizedBox(height: 16.0),
-             buildProjectCard(
+            buildProjectCard(
               context,
-              title: 'Good Grade Student',
-              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
+              title: RichText(
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Exit  ",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "Exam\n",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "App",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              description:
+                  'Meet our Exit Exam App, designed for graduate students. It features a strategic Blueprint Section, in-depth Tutorials Hub, and an Exam Section with detailed answer explanations.',
+              imageAsset: 'assets/sata_image/home screen.jpg',
+              cardWidth: 400,
+              cardHeight: 450,
+            ),
+            SizedBox(height: 16.0),
+            buildProjectCard(
+              context,
+              title: RichText(
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "DaDa ",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "Music\n",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "Player",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              description:
+                  '🎶 DaDa-AI_Player: Elevate your music experience with AI integration. Play, discover, and groove to the beats of innovation! 🤖🎵 #MusicTech #AI',
               imageAsset: 'assets/ggs.jpg',
               cardWidth: 400,
-              cardHeight: 600,
+              cardHeight: 450,
             ),
             SizedBox(height: 16.0),
-             buildProjectCard(
+            buildProjectCard(
               context,
-              title: 'Good Grade Student',
-              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
+              title: RichText(
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Spotify ",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "UI\n",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "Clone",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              description:
+                  '🚀 Dive into this sleek, Flutter-powered replica of Spotify UI. Perfect for learning Dart, Flutter, and crafting stunning cross-platform apps. Explore, customize, and elevate your development game effortlessly. 🎵✨ #Flutter #UIReplica',
+              imageAsset: 'assets/spotify.jpg',
+              cardWidth: 400,
+              cardHeight: 450,
+            ),
+            SizedBox(height: 16.0),
+            buildProjectCard(
+              context,
+              title: RichText(
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Jimila",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "Chat\n",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "App",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber[800],
+                        fontSize: 25,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              description:
+                  'Jimila: A Java-based chat app for seamless and secure communication. Join the conversation!',
               imageAsset: 'assets/ggs.jpg',
               cardWidth: 400,
-              cardHeight: 600,
+              cardHeight: 450,
             ),
             SizedBox(height: 16.0),
-             buildProjectCard(
-              context,
-              title: 'Good Grade Student',
-              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
-              imageAsset: 'assets/ggs.jpg',
-              cardWidth: 400,
-              cardHeight: 600,
-            ),
-            SizedBox(height: 16.0),
-             buildProjectCard(
-              context,
-              title: 'Good Grade Student',
-              description: 'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
-              imageAsset: 'assets/ggs.jpg',
-              cardWidth: 400,
-              cardHeight: 600,
-            ),
-            SizedBox(height: 16.0),
-           
-            // Add more buildProjectCard calls for each project
           ],
         ),
       ),
@@ -75,17 +252,25 @@ class ProjectsScreen extends StatelessWidget {
   }
 
   Widget buildProjectCard(BuildContext context,
-      {required String title, required String description, required String imageAsset, double cardWidth = 400, double cardHeight = 600}) {
-    
+      {required RichText title,
+      required String description,
+      required String imageAsset,
+      double cardWidth = 400,
+      double cardHeight = 400}) {
     return GestureDetector(
-     onTap: () {
-                        // Handle item 3 press
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) =>  CoursePage()),
-                        );
-                       
-                      },
+      onTap: () {
+        // Handle item press
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ProjectDetailsScreen(
+              title: title,
+              description: description,
+              imageAsset: imageAsset,
+            ),
+          ),
+        );
+      },
       child: Card(
         elevation: 5,
         shape: RoundedRectangleBorder(
@@ -109,21 +294,18 @@ class ProjectsScreen extends StatelessWidget {
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.only(left: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      title,
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                    title,
                     SizedBox(height: 8.0),
                     Text(
                       description,
-                      style: TextStyle(fontSize: 18),
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white, // Set text color to white
+                      ),
                     ),
                   ],
                 ),
@@ -137,7 +319,7 @@ class ProjectsScreen extends StatelessWidget {
 }
 
 class ProjectDetailsScreen extends StatelessWidget {
-  final String title;
+  final RichText title;
   final String description;
   final String imageAsset;
 
@@ -154,7 +336,7 @@ class ProjectDetailsScreen extends StatelessWidget {
         title: Text('Project Details'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.only(left: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -165,17 +347,14 @@ class ProjectDetailsScreen extends StatelessWidget {
               height: 400,
             ),
             SizedBox(height: 16.0),
-            Text(
-              title,
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            title,
             SizedBox(height: 8.0),
             Text(
               description,
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.white, // Set text color to white
+              ),
             ),
           ],
         ),

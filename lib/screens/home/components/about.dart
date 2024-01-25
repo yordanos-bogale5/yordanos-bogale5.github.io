@@ -23,7 +23,7 @@ class AboutScreen extends StatelessWidget {
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(66.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -119,7 +119,7 @@ class AboutScreen extends StatelessWidget {
               getSkillImage(skill),
               width: 80.0,
               height: 80.0,
-              fit: BoxFit.cover, // Set the fit property to cover
+              fit: BoxFit.cover,
             ),
           ),
         ),
@@ -137,17 +137,22 @@ class AboutScreen extends StatelessWidget {
       children: [
         Container(
           width: 100,
-          height: 100,
+          height: 50,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(color: Colors.amber[800]!, width: 2.0),
           ),
           child: Center(
-            child: Image.asset(
-              getToolImage(tool),
-              width: 80.0,
-              height: 80.0,
-              fit: BoxFit.cover, // Set the fit property to cover
+            child: Container(
+              height: 50,
+              width: 50,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: AssetImage(getToolImage(tool)), // Fix: Use getToolImage method
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
           ),
         ),
