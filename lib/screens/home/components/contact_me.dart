@@ -27,18 +27,28 @@ class Recommendations extends StatelessWidget {
           SizedBox(height: 36.0),
           Padding(
             padding: EdgeInsets.only(left: 600.0),
-            child: Text(
-              'Find Me On',
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 20.0,
+            child:  RichText(
+              text: TextSpan(
+                children: [
+                  TextSpan(
+                    text: "Find",
+                    style: TextStyle(color: Colors.white, fontSize: 20,),
+                  ),
+                  TextSpan(
+                    text: " Me ",
+                    style: TextStyle(color: Colors.amber[800], fontSize: 20,),
+                  ),
+                  TextSpan(
+                    text: " On ",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                ],
               ),
             ),
           ),
           SizedBox(height: 8.0),
           Padding(
-            padding: EdgeInsets.only(left: 600.0),
+            padding: EdgeInsets.only(left: 650.0),
             child: RichText(
               text: TextSpan(
                 children: [
@@ -71,7 +81,7 @@ class Recommendations extends StatelessWidget {
           SizedBox(height: 32.0),
           // Add copyright section
           Padding(
-            padding: EdgeInsets.only(left: 500.0),
+            padding: EdgeInsets.only(left: 550.0),
             child: Text(
               '© 2022 Yordanos Bogale. All rights reserved.',
               style: TextStyle(

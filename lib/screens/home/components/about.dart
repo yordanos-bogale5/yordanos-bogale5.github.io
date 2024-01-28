@@ -23,7 +23,7 @@ class AboutScreen extends StatelessWidget {
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.all(66.0),
+            padding: const EdgeInsets.all(16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -137,15 +137,15 @@ class AboutScreen extends StatelessWidget {
       children: [
         Container(
           width: 100,
-          height: 50,
+          height: 100,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(color: Colors.amber[800]!, width: 2.0),
           ),
           child: Center(
             child: Container(
-              height: 50,
-              width: 50,
+              height: 5,
+              width: 5,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(

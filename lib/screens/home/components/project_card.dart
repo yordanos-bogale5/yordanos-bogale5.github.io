@@ -45,7 +45,7 @@ class ProjectsScreen extends StatelessWidget {
               ),
               description:
                   'E-Learning App by Flutter: Empowering students, instructors, and administrators with personalized dashboards, authentication, cart, wishlist, library, chat, and notifications. Join me in revolutionizing e-learning.',
-              imageAsset: 'assets/ggs.jpg',
+              imageAsset: 'assets/ggs_images/creavers.jpg',
               cardWidth: 400,
               cardHeight: 450,
             ),
@@ -122,8 +122,8 @@ class ProjectsScreen extends StatelessWidget {
                 ),
               ),
               description:
-                  'Meet our Exit Exam App, designed for graduate students. It features a strategic Blueprint Section, in-depth Tutorials Hub, and an Exam Section with detailed answer explanations.',
-              imageAsset: 'assets/sata_image/home screen.jpg',
+                  'Meet My Exit Exam App, designed for graduate students. It features a strategic Blueprint Section, in-depth Tutorials Hub, and an Exam Section with detailed answer explanations.',
+              imageAsset: 'assets/sata_image/sata app.jpg',
               cardWidth: 400,
               cardHeight: 450,
             ),
@@ -134,7 +134,7 @@ class ProjectsScreen extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "DaDa ",
+                      text: " AI ",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -162,7 +162,7 @@ class ProjectsScreen extends StatelessWidget {
               ),
               description:
                   '🎶 DaDa-AI_Player: Elevate your music experience with AI integration. Play, discover, and groove to the beats of innovation! 🤖🎵 #MusicTech #AI',
-              imageAsset: 'assets/ggs.jpg',
+              imageAsset: 'assets/music_player.jpg',
               cardWidth: 400,
               cardHeight: 450,
             ),

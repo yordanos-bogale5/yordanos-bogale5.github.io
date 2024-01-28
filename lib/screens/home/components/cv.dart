@@ -16,12 +16,8 @@ class ResumeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              'Curriculum Vitae',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 16.0),
-            // Display your CV content here, you can use Text, RichText, or any other widget
+            
+
             PdfViewer(cvUrl),
             SizedBox(height: 24.0),
             ElevatedButton.icon(
